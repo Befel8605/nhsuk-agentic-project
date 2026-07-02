@@ -35,9 +35,29 @@ jobs:
       - name: Create Documentation Report
         run: |
           mkdir -p reports
-          echo "# Repository Audit" > reports/repository-audit.md
-          echo "" >> reports/repository-audit.md
-          echo "Generated on $(date)" >> reports/repository-audit.md
+
+          {
+            echo "# Repository Audit"
+            echo ""
+            echo "Generated on $(date)"
+            echo ""
+
+            echo "## Repository Statistics"
+            echo "- Total files: $(find . -type f | wc -l)"
+            echo "- Total directories: $(find . -type d | wc -l)"
+            echo ""
+
+            echo "## Markdown Files"
+            find . -name "*.md" | sed 's/^/- /'
+
+            echo ""
+            echo "## Workflow Files"
+            find .github/workflows -name "*.yml" -o -name "*.yaml" 2>/dev/null | sed 's/^/- /'
+
+            echo ""
+            echo "## Repository Inventory"
+            head -50 repo_inventory.txt | sed 's/^/- /'
+          } > reports/repository-audit.md
 
       - name: Commit Changes
         if: github.event_name != 'pull_request'
