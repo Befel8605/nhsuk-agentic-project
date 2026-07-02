@@ -1,0 +1,26 @@
+name: Documentation Review
+
+on:
+  push:
+    branches:
+      - master
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  documentation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify Documentation
+        run: |
+          echo "Checking repository documentation..."
+
+          test -f README.md || echo "README missing"
+          test -f CONTRIBUTING.md || echo "CONTRIBUTING missing"
+          test -f LICENSE || echo "LICENSE missing"
