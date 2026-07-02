@@ -3,8 +3,16 @@ name: Repository Maintainer
 on:
   workflow_dispatch:
 
+  push:
+    branches:
+      - master
+
+  pull_request:
+    branches:
+      - master
+
   schedule:
-    - cron: "0 9 * * 1"
+    - cron: '0 9 * * 1'
 
 permissions:
   contents: write
@@ -32,6 +40,7 @@ jobs:
           echo "Generated on $(date)" >> reports/repository-audit.md
 
       - name: Commit Changes
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "repo-maintainer-bot"
           git config user.email "actions@github.com"
