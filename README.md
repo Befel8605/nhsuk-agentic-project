@@ -72,6 +72,12 @@ cd nhsuk-agent-project
 
 ---
 
+## Troubleshooting
+
+For guidance on resolving workflow failures (including transient authentication errors), see [docs/troubleshooting.md](docs/troubleshooting.md).
+
+---
+
 ## Security
 
 Secrets are managed through GitHub Actions Secrets.
