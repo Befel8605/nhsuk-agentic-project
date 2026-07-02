@@ -40,9 +40,21 @@ Performs:
 ### Repo Status
 
 Produces:
+
 - Activity summaries
 - Repository insights
 - Maintenance recommendations
+
+---
+
+## Repository Governance
+
+This repository uses GitHub Actions and Agentic Workflows to:
+
+- Maintain documentation
+- Generate status reports
+- Support project administration
+- Improve repository quality
 
 ---
 
