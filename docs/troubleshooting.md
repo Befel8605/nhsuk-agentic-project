@@ -46,4 +46,4 @@ If it fails, check that the workflow has `contents: write` permission and that b
 
 ### Documentation Review
 
-The `documentation.yml` workflow verifies that required documentation files exist. If it reports missing files, create the indicated files in the repository root.
+The `documentation.yml` workflow prints warnings in the job logs when key documentation files are missing (for example, "README missing" or "LICENSE missing"); add the indicated files in the repository root.
