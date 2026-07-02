@@ -7,7 +7,7 @@
 **Symptom:**
 
 ```
-Authentication failed with provider at http://172.30.0.30:10002 (HTTP 401).
+Authentication failed with provider at <inference-provider-url> (HTTP 401).
 Check your COPILOT_PROVIDER_API_KEY or COPILOT_PROVIDER_BEARER_TOKEN.
 Request failed (transient_auth_error). Retrying...
 ```
