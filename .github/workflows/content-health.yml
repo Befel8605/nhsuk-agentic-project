@@ -1,0 +1,30 @@
+name: Content Health Report
+
+on:
+  schedule:
+    - cron: "0 7 * * *" # Every morning at 07:00 UTC
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: read
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run content health scanner
+        run: python scripts/content_health.py
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-health-report
+          path: reports/content-health-report.md
