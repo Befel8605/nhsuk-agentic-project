@@ -1,75 +1,75 @@
 # Repository Audit
 
-Generated on Mon Nov  9 19:38:11 UTC 2026
+Generated on Mon Nov 16 19:24:59 UTC 2026
 
 ## Repository Statistics
 - Total files: 68
-- Total directories: 46
+- Total directories: 49
 
 ## Markdown Files
-- ./prompts/repo-maintainer.md
-- ./docs/troubleshooting.md
-- ./docs/architecture.md
-- ./README.md
-- ./CONTRIBUTING.md
-- ./reports/repository-audit.md
 - ./.github/workflows/daily-repo-status.md
+- ./prompts/repo-maintainer.md
+- ./docs/architecture.md
+- ./docs/troubleshooting.md
+- ./CONTRIBUTING.md
+- ./README.md
+- ./reports/repository-audit.md
 
 ## Workflow Files
 - .github/workflows/repo-maintainer.yml
 - .github/workflows/agentics-maintenance.yml
-- .github/workflows/daily-repo-status.lock.yml
 - .github/workflows/content-health.yml
+- .github/workflows/daily-repo-status.lock.yml
 - .github/workflows/documentation.yml
 
 ## Repository Inventory
+- ./.github/aw/actions-lock.json
+- ./.github/workflows/repo-maintainer.yml
+- ./.github/workflows/agentics-maintenance.yml
+- ./.github/workflows/daily-repo-status.md
+- ./.github/workflows/content-health.yml
+- ./.github/workflows/daily-repo-status.lock.yml
+- ./.github/workflows/documentation.yml
 - ./repo_inventory.txt
+- ./scripts/content_health.py
 - ./prompts/repo-maintainer.md
-- ./docs/troubleshooting.md
-- ./docs/architecture.md
-- ./README.md
-- ./CONTRIBUTING.md
-- ./.gitattributes
-- ./.git/hooks/push-to-checkout.sample
-- ./.git/hooks/prepare-commit-msg.sample
-- ./.git/hooks/sendemail-validate.sample
-- ./.git/hooks/fsmonitor-watchman.sample
-- ./.git/hooks/pre-merge-commit.sample
-- ./.git/hooks/pre-rebase.sample
-- ./.git/hooks/pre-push.sample
-- ./.git/hooks/update.sample
-- ./.git/hooks/applypatch-msg.sample
-- ./.git/hooks/pre-commit.sample
-- ./.git/hooks/post-update.sample
-- ./.git/hooks/pre-receive.sample
-- ./.git/hooks/pre-applypatch.sample
-- ./.git/hooks/commit-msg.sample
-- ./.git/info/exclude
-- ./.git/refs/heads/master
-- ./.git/refs/remotes/origin/master
-- ./.git/objects/93/190f0defcab026fba184b1d60357f7042eac06
-- ./.git/objects/d7/02fc8b59877d286d5a03bdf3425da597eb5ca5
-- ./.git/objects/92/999ed1932e355c8af7e0c5ff59772b94b7842b
-- ./.git/objects/71/df4c3820903b29fa847aeedce2f14fa86346fb
-- ./.git/objects/a2/21140408bb90d64bd37c2cb1c68aba058567e8
-- ./.git/objects/8e/b8ac71edf2ce371bafd3a93bcf0248335e51de
-- ./.git/objects/bf/0184792600506c2b7d2853a9e5a39af5c967b9
-- ./.git/objects/46/4b2d930ceb32f614daeac491f6469969181374
-- ./.git/objects/98/946747caab3cd9efbc44f8c4645ca2d66427cd
-- ./.git/objects/4b/9a8453e4909b0d0968ad9c2b55c54ba2e80f33
-- ./.git/objects/5c/aeed97d1a5c5903ca908a66b921f6eed231ad9
-- ./.git/objects/be/a6a695b9b085b983a777dbb50954a8de3990d0
-- ./.git/objects/35/8c2fa23dd286418a2515cfeb2cde70e46a6107
-- ./.git/objects/91/bb059519aa04473406fb352f0e82bf473ef4d1
-- ./.git/objects/a7/81a3948afe4b43e61fef1bd885d038ce17ef8b
-- ./.git/objects/5a/9f008773edc6d978f44c092fe5330afa59f9a4
-- ./.git/objects/e3/f12406d4d48de61674cd8dc3fdbcd12084ec32
 - ./.git/objects/e3/47af0b690213767b091778a5042460dbff89dc
-- ./.git/objects/13/8fdd043ae6c65491786bb484616a62fa032d5e
-- ./.git/objects/13/aac62a79ef4b57a3fe6ab7233aea75d960297e
-- ./.git/objects/0d/b518550e747c40008b2c327031428ef0d46f62
-- ./.git/objects/1b/4ff920068d17cb6dbb9ae3efb166f0b284a792
-- ./.git/objects/1b/06f3ebf53c0e519f5cb70046fbb4a26659e6e2
+- ./.git/objects/68/045720a11ed23470c1841b4ed479e31bfe6e12
+- ./.git/objects/5c/aeed97d1a5c5903ca908a66b921f6eed231ad9
+- ./.git/objects/a2/21140408bb90d64bd37c2cb1c68aba058567e8
+- ./.git/objects/35/8c2fa23dd286418a2515cfeb2cde70e46a6107
+- ./.git/objects/22/ea5ccb847bad8258731e6f01c494b39a6d927f
 - ./.git/objects/45/b6f8c07994ffdc9bf8713581855d09fae707bd
+- ./.git/objects/bf/0184792600506c2b7d2853a9e5a39af5c967b9
+- ./.git/objects/93/190f0defcab026fba184b1d60357f7042eac06
+- ./.git/objects/98/946747caab3cd9efbc44f8c4645ca2d66427cd
+- ./.git/objects/62/ae7212eb75272e622cdf0a5c4c6853251e9172
+- ./.git/objects/1b/06f3ebf53c0e519f5cb70046fbb4a26659e6e2
+- ./.git/objects/4b/9a8453e4909b0d0968ad9c2b55c54ba2e80f33
+- ./.git/objects/8e/b8ac71edf2ce371bafd3a93bcf0248335e51de
+- ./.git/objects/d7/02fc8b59877d286d5a03bdf3425da597eb5ca5
+- ./.git/objects/a7/81a3948afe4b43e61fef1bd885d038ce17ef8b
+- ./.git/objects/0d/b518550e747c40008b2c327031428ef0d46f62
+- ./.git/objects/c1/d23601192e3d5dc6a9c6cf75bb0522e333aedc
+- ./.git/objects/72/bd9774e2a2811596e70ff8e763188596e8bdc3
+- ./.git/objects/5a/9f008773edc6d978f44c092fe5330afa59f9a4
+- ./.git/objects/13/8fdd043ae6c65491786bb484616a62fa032d5e
+- ./.git/objects/be/a6a695b9b085b983a777dbb50954a8de3990d0
+- ./.git/objects/91/bb059519aa04473406fb352f0e82bf473ef4d1
+- ./.git/objects/46/4b2d930ceb32f614daeac491f6469969181374
 - ./.git/objects/1c/898e64ef8910301afd717e89e8766b4587b565
-- ./.git/HEAD
+- ./.git/logs/HEAD
+- ./.git/logs/refs/remotes/origin/master
+- ./.git/logs/refs/heads/master
+- ./.git/config
+- ./.git/hooks/applypatch-msg.sample
+- ./.git/hooks/push-to-checkout.sample
+- ./.git/hooks/pre-applypatch.sample
+- ./.git/hooks/update.sample
+- ./.git/hooks/post-update.sample
+- ./.git/hooks/pre-merge-commit.sample
+- ./.git/hooks/pre-receive.sample
+- ./.git/hooks/sendemail-validate.sample
+- ./.git/hooks/pre-commit.sample
+- ./.git/hooks/pre-push.sample
+- ./.git/hooks/prepare-commit-msg.sample
